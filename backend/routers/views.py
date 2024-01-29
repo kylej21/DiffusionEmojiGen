@@ -353,6 +353,6 @@ def emojiGen(prompt: str):
         x_gen, x_gen_store = ddpm.sample((3, 28, 28), device, prompt=prompt)
         print(f'{prompt}: Finished Generating')
         image = revert_image(x_gen[0])
-        image.save(f"/Users/kylejohnson/Documents/Hackathons/HackAtUCI/backend/routers/static/image{prompt.replace(' ','')}.jpg")
+        image.save(f"/Users/kylejohnson/Documents/HackProjects/DiffusionEmojiGen/backend/routers/static/image{prompt.replace(' ','')}.jpg")
                    
-    return {'prompt': f"/Users/kylejohnson/Documents/Hackathons/HackAtUCI/backend/routers/static/image{prompt.replace(' ','')}.jpg"}
+    return {'prompt': f"/Users/kylejohnson/Documents/HackProjects/DiffusionEmojiGen/backend/routers/static/image{prompt.replace(' ','')}.jpg"}
