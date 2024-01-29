@@ -1,7 +1,7 @@
 # DiffusionEmojiGen
 Diffusion model Neural Network to deploy a custom emoji generator built for IrvineHacks at UCI
 # Example 
-https://youtu.be/DzD8RCODXBo
+https://www.youtube.com/watch?v=DzD8RCODXBo
 # Setup
 1. Install dependencies
 2. Unzip our Machine learning Model from backend/routers
