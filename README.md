@@ -1,5 +1,5 @@
 # DiffusionEmojiGen
-Diffusion model Neural Network to deploy a custom emoji generator built for IrvineHacks at UCI
+Diffusion model Neural Network to deploy a custom emoji generator built for IrvineHacks 2024 at UCI
 # Example 
 https://www.youtube.com/watch?v=DzD8RCODXBo
 # Setup
@@ -14,7 +14,7 @@ The frontend is built with Next.js, Tailwind CSS, and JavaScript
 # Backend
 We used a FastAPI to set up a python backend. Our backend is intended to host the PyTorch model that we saved from Google Colab
 # Model 
-We initially used vector embeddings to convert the user prompt into ML readable input. Then, we used a diffusion model to strategically remove noise from images until they share characteristics that resemble the vectors. 
+We initially used vector embeddings to convert the user prompt into ML readable input. Then, we used a diffusion model to strategically remove noise from images through many passes until they share characteristics that resemble the vectors. 
 # Challenges 
 1. The lack of public emoji data was the biggest issue for training our model. Since there are only about 3000 emojis for the apple Iphone, we only had 3000 images to train our data. This made it very tricky for our model to generalize to prompts that are not related to pre existing emojis.
 2. Poor labeling of the emojis caused our model to struggle with color. Regular emojis such as 'happy face' would be labeled "white happy face" if the background was white. Because of this, our model misunderstood the color white.
